@@ -1,0 +1,48 @@
+.hist-page{
+    margin-top: -7%;
+}
+.hist-page .container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hist-page .sub-title{
+    color: #f7e8e8;
+    font-size: 40px;
+    padding: 2%;
+  }
+  table {
+    border-collapse: collapse;
+    border-style: hidden;
+  }
+  table td {
+    border: 1px solid #f7e8e8;
+  }
+  .hist-page .table-container{
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    width: 70%;
+    padding: 4% 1% ;
+    border-radius: 50px;
+    margin-bottom: 5%;
+  }
+  .hist-page .sub-table{
+    width: 80%;
+  }
+  
+  .hist-page .table-head{
+    font-size: 25px;
+    color: white;
+    width: 20%;
+    text-align: center;
+    padding: 2%;
+  }
+  .hist-page .cols{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 1%;
+  }

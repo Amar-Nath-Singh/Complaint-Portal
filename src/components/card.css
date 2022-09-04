@@ -1,0 +1,32 @@
+.Card-container{
+    padding: 2%;
+    display: flex;
+    flex: 1;
+    
+}
+.Card-Box{
+    color: white;
+    padding: 5%;
+    min-width: 150px;
+    flex-grow: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: linear-gradient(45deg,lightgreen,darkgreen);
+}
+.delete-button{
+    border: none;
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: -5%;
+}
+.delete-button:hover{
+    width: 25px;
+    height: 25px;
+}
+.person{
+    font-size: 30px;
+}
+.desp{
+    font-size: 20px;
+}

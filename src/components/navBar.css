@@ -1,0 +1,31 @@
+.nav-bar{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.nav-Container{
+    display:flex;
+    width: 75%;
+    flex-direction: row;
+    flex-grow: 0;
+    justify-content: space-between;
+    margin: 1% 5%;
+}
+.logo-img{
+    max-width: 200px;
+    max-width: 200px;
+    float:left
+}
+
+.elements{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+.elements:hover{
+    text-shadow: 2px 1px  black;
+}
+li{ list-style: none;
+    margin: 5px;
+    }
