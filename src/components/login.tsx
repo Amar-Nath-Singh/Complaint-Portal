@@ -1,5 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import "./login.css";
 import { Link } from 'react-router-dom'
 import App from '../App'
 interface complaint {
@@ -44,7 +45,7 @@ class Login extends React.Component<LoginProps, LoginState> {
             <div className='Login-page'>
                 <input className='username' placeholder='username' onChange={event => this.setState({ username: event.target.value })}></input>
                 <input type="password" className='password' placeholder='password' onChange={event => this.setState({ password: event.target.value })}></input>
-                <button onClick={(e) => this.get_detail()}> Submit </button>
+                <button className="submit" onClick={(e) => this.get_detail()}> Submit </button>
             </div>);
     }
 }

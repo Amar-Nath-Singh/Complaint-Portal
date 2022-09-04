@@ -1,0 +1,19 @@
+.Login-page{
+    display: flex;
+    justify-content: start;
+    justify-items: center;
+    align-items: center;
+    padding: 5vh 0;
+    height: 70vh;
+    flex:2;
+    font-size: 10px;
+    flex-direction: column;
+    border-radius: 0.5px;
+    border-color: black;
+    box-sizing: border-box;
+
+}
+.username,.submit,.password{
+    height: 15px;
+    
+}
