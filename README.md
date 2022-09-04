@@ -1,6 +1,30 @@
-# Getting Started with Create React App
+# Complaint-Portal
+Hostel Complaint Portal
+This repository contain a simple mern app to file your hostel related complaints.
+## Table of Contents
+ > Project Layout
+ > Setting up the Mern-app project
+ > Authors
+## Project Layout
+ Master ----|
+            | 
+            |-----Backend(server side)
+            |
+            |-----Public
+            |
+            |-----src(frontend app/client side
+            
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Structure
+    The project uses generic MERN stack app.
+    First, we will login, after login user will be directed to Home page. User can add complaints which will be shown in Dashboard, can delete the complaints from complaint portal.
+## Setting up the mern-app project
+    Clone the repo 
+    $ git clone https://github.com/Amar-Nath-Singh/Complaint-Portal.git
+    cd backend
+    npm install
+    cd source
+    npm install
 
 ## Available Scripts
 
