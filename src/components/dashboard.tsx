@@ -28,7 +28,7 @@ class Dashboard extends React.Component<DashboardProps, DashboardState> {
     render() {
         return (
             <div className='dashboard-box'>
-                <p className="dashboard-head">Heading</p>
+                <p className="dashboard-head"></p>
                 <div className='complaint-box'>
                     <div className='complaint-strip'>
                         {this.props.complaints.map((complaint) =>
