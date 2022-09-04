@@ -18,9 +18,9 @@ class NavBar extends React.Component<NavBarProps, NavBarState> {
                     alt=''></img>
                 <ul className='nav-Container'>
 
-                    <li ><Link className='elements' to={{pathname:"/"}}>Dashboard</Link></li>
+                    <li ><Link className='elements' to={{pathname:"/"}}>Home</Link></li>
                     <li ><Link className='elements' to={{pathname:"/complaint"}}>Complaint</Link></li>
-                    <li ><Link className='elements' to={{pathname:"/history"}}>History</Link></li>
+                    <li ><Link className='elements' to={{pathname:"/history"}}>Dashboard</Link></li>
                     <li ><Link className='elements' to={{pathname:"/add"}}>Logout</Link></li>
                 </ul>
             </div>
