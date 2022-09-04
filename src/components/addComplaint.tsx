@@ -10,11 +10,12 @@ interface AddComplaintState {
 }
 
 class AddComplaint extends React.Component<AddComplaintProps, AddComplaintState> {
-    state = {status:"pending"}
+    state = {status:"pending",}
     handleClick = (e: React.MouseEvent<HTMLElement>) => {
         axios
             .post("http://localhost:5000/dataset/addcomplaint", this.state)
             .then((res) => console.log(res.data));
+        
     }
     render() {
         return (
