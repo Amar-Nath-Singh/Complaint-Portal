@@ -20,13 +20,9 @@ class NavBar extends React.Component<NavBarProps, NavBarState> {
 
                     <li ><Link className='elements' to={{pathname:"/"}}>Home</Link></li>
                     <li ><Link className='elements' to={{pathname:"/complaint"}}>Complaint</Link></li>
-<<<<<<< HEAD
                     <li ><Link className='elements' to={{pathname:"/history"}}>Dashboard</Link></li>
-                    <li ><Link className='elements' to={{pathname:"/add"}}>Logout</Link></li>
-=======
-                    <li ><Link className='elements' to={{pathname:"/history"}}>History</Link></li>
                     <li ><Link className='elements' to={{pathname:"/Login"}}>Logout</Link></li>
->>>>>>> 0f80ab881583aaf026db9bab88279c2ed73545e1
+
                 </ul>
             </div>
         );
