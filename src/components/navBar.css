@@ -10,12 +10,14 @@
     flex-direction: row;
     flex-grow: 0;
     justify-content: space-between;
-    margin: 1% 5%;
+    margin: 1% 15% 0 ;
+    
 }
 .logo-img{
     max-width: 200px;
     max-width: 200px;
-    float:left
+    float:left;
+    padding: 2vh;
 }
 
 .elements{
@@ -27,5 +29,5 @@
     text-shadow: 2px 1px  black;
 }
 li{ list-style: none;
-    margin: 5px;
+    margin: 5px 0 0 100px;
     }

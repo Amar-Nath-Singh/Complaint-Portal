@@ -29,9 +29,9 @@ class History extends React.Component<HistoryProps, HistoryState> {
                         <table className="sub-table">
                             <tr>
                                 <td className="table-head">Name</td>
-                                <td className="table-head">Roll.NO</td>
-                                <td className="table-head">descp</td>
-                                <td className="table-head">status</td>
+                                <td className="table-head">Roll.No</td>
+                                <td className="table-head">Description</td>
+                                <td className="table-head">Status</td>
                             </tr>
                             {this.props.complaints.map((row) => (
                                 <tr className="table-row">
