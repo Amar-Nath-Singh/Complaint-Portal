@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from 'axios';
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import App from './App'
+import App from '../App'
 interface complaint {
     _id: string,
     name: string,
@@ -28,14 +28,15 @@ class Login extends React.Component<LoginProps, LoginState> {
         axios
             .get<complaints>("http://localhost:5000/user/" + this.state.username + "/" + this.state.password)
             .then((response: any) => {
-                if (!(response.data==null)) {
-                    
+                if (!(response.data == null)) {
+                    console.log(response.data);
+                    window.location.href = "http://localhost:3000/"
                 }
             })
             .catch((error: any) => {
                 console.log(error);
             });
-        
+
 
     }
     render() {

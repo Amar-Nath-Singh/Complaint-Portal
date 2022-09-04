@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import CardPage from './components/cardpage';
 import NavBar from './components/navBar';
@@ -7,7 +6,7 @@ import Dashboard from './components/dashboard';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import History from './components/history';
 import axios from "axios";
-import Login from './login';
+import Login from './components/login';
 import AddComplaint from './components/addComplaint';
 
 interface AppProps {
@@ -37,12 +36,11 @@ const App: React.FunctionComponent<AppProps> = (userinfo:AppProps) => {
   return (
     <div className="App">
       <BrowserRouter>
-        <NavBar></NavBar>
         <Routes>
-          <Route path="/" element={<Dashboard complaints={comp}></Dashboard>} />
-          <Route path="/complaint" element={<CardPage complaints={comp}></CardPage>}></Route>
-          <Route path="/history" element={<History complaints={comp}></History>}></Route>
-          <Route path="/add" element={<AddComplaint></AddComplaint>}></Route>
+          <Route path="/" element={<div><NavBar></NavBar><Dashboard complaints={comp}></Dashboard></div>} />
+          <Route path="/complaint" element={<div><NavBar></NavBar><CardPage complaints={comp}></CardPage></div>}></Route>
+          <Route path="/history" element={<div><NavBar></NavBar><History complaints={comp}></History></div>}></Route>
+          <Route path="/add" element={<div><NavBar></NavBar><AddComplaint></AddComplaint></div>}></Route>
           <Route path="/Login" element={<Login></Login>}></Route>
         </Routes>
       </BrowserRouter>
