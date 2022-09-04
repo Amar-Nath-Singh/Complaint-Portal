@@ -37,11 +37,11 @@ const App: React.FunctionComponent<AppProps> = (userinfo:AppProps) => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<div><NavBar></NavBar><Dashboard complaints={comp}></Dashboard></div>} />
+          <Route path="/dashboard" element={<div><NavBar></NavBar><Dashboard complaints={comp}></Dashboard></div>} />
           <Route path="/complaint" element={<div><NavBar></NavBar><CardPage complaints={comp}></CardPage></div>}></Route>
           <Route path="/history" element={<div><NavBar></NavBar><History complaints={comp}></History></div>}></Route>
           <Route path="/add" element={<div><NavBar></NavBar><AddComplaint></AddComplaint></div>}></Route>
-          <Route path="/Login" element={<Login></Login>}></Route>
+          <Route path="/" element={<Login></Login>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

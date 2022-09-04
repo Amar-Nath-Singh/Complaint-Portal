@@ -22,14 +22,14 @@ class AddComplaint extends React.Component<AddComplaintProps, AddComplaintState>
     render() {
         return (
             <div className='add-complaint'>
-                <input type="text" onClick={(e)=> this.visi = false} placeholder='Name' onChange={event => this.setState({ name: event.target.value })}></input>
-                <input type="text" onClick={(e)=> this.visi = false} placeholder='rollno' onChange={event => this.setState({ rollno: event.target.value })}></input>
-                <input type="text" onClick={(e)=> this.visi = false} placeholder='desp' onChange={event => this.setState({ desp: event.target.value })}></input>
+                <input type="text" onClick={(e)=> {this.visi = false; this.setState({name:"",rollno:"",desp:""})}} placeholder='Name' onChange={event => this.setState({ name: event.target.value })} value={this.state.name}></input>
+                <input type="text" onClick={(e)=> {this.visi = false; this.setState({name:"",rollno:"",desp:""})}} placeholder='rollno' onChange={event => this.setState({ rollno: event.target.value })} value={this.state.rollno}></input>
+                <input type="text" onClick={(e)=> {this.visi = false; this.setState({name:"",rollno:"",desp:""})}}placeholder='desp' onChange={event => this.setState({ desp: event.target.value })} value={this.state.desp}></input>
                 <button className="btn" onClick={this.handleClick}>Submit</button>
                 <a className='Add-info' style={{ visibility: this.visi ? "visible" : "hidden" }}>
                     Data Added.
                 </a>
-            </div>
+            </div >
         );
     }
 }
