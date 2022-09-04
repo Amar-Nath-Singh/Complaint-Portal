@@ -1,0 +1,40 @@
+.add-complaint{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Add-info{
+    color: red;
+    font-size: 20px;
+}
+.details{
+    font-size: 20px;
+    color: black;
+}
+input{
+    border: none;
+    width: 25%;
+    padding: 2% ;
+    border-radius: 20px;
+    margin: 1%;
+}
+input::placeholder {
+    font: 20px/3 sans-serif;
+}
+input[type="text"]
+{
+    font-size:24px;
+}
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+    background-color: blueviolet;
+    border-radius: 20px;
+
+  }
