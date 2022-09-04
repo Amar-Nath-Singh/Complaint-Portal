@@ -12,7 +12,12 @@ const userSchema = new Schema(
         require: true,
       },
       name:{
-        type:
+        type:String,
+        require:true,
+      },
+      rollno:{
+        type:String,
+        require:true,
       }
   },
   {

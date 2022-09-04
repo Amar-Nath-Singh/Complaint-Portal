@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react';
+import { useLocation } from 'react-router-dom';
 import "./dashboard.css"
 interface complaint {
     _id:string,
@@ -7,6 +8,10 @@ interface complaint {
     rollno: string,
     desp: string,
     status: string
+}
+interface data{
+    username:String,
+    password:String
 }
 interface DashboardProps {
     complaints: complaint[]

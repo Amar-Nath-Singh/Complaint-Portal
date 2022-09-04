@@ -25,7 +25,6 @@ router.route("/addcomplaint").post((req, res) => {
     .catch((err) => res.status(400).json("Error: " + err));
 });
 router.route("/delete/:id").delete((req, res) => {
-  console.log(String(req.params.id))
   dataset
     .findByIdAndDelete(String(req.params.id))
     .then(() => res.json("Data deleted"))
